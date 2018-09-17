@@ -1,0 +1,28 @@
+{
+  "name": "nyt-react",
+  "version": "1.0.0",
+  "description": "An app using React to scrape NY-Times articles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tedhuh/NYT-React.git"
+  },
+  "author": "Ted Huh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tedhuh/NYT-React/issues"
+  },
+  "homepage": "https://github.com/tedhuh/NYT-React#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.15.4",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.2.15",
+    "morgan": "^1.9.1",
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.38.1"
+  }
+}
