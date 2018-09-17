@@ -1,17 +1,16 @@
-const router = require("express")
+const express = require("express");
+const router = express.Router();
 const articleControllers = require("./../controllers/articleControllers");
 
 
 
 
-router.use("/")
-  .get(articleControllers.selectAll)
-  .post(articleControllers.create);
+router.use("/", articleControllers.selectAll )
+router.use("/", articleControllers.removeAll)
 
 // Matches with "/api/books/:id"
-router.use("/:id")
-  .get(articleControllers.selectById)
-  .delete(articleControllers.removeBy);
+router.use("/:id",articleControllers.selectById)
+router.use("/:id",articleControllers.removeById)
 
 module.exports = router;
 
